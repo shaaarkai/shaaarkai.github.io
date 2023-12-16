@@ -9,9 +9,16 @@ var levelText = document.getElementById('lvl')
 var msgText = document.getElementById('msg')
 var canText = document.getElementById('can')
 
+var lvl1Text = document.getElementById('lvl1')
+var lvl2Text = document.getElementById('lvl2')
+var lvl3Text = document.getElementById('lvl3')
+
+
+var age = '17'
+
 // happy 17th raish. sorry that ive made u disappointed :( i love u, i miss u
 
-var txt = 'happy 17th raish. sorry that ive made u disappointed :( i love u, i miss u'; 
+var txt = 'happy '+age+'th raish. sorry that ive made u disappointed :( i love u, i miss u'; 
 var txt2 = '(can i call u bebe na ulit?)'; 
 
 
@@ -352,6 +359,9 @@ function animate(){
 		// c.fillRect(0, 0, canvas.width, canvas.height)
 		cavee.draw()
 		coinScoreText.innerHTML = "";
+		lvl1.innerHTML = "lvl 1";
+		lvl2.innerHTML = "lvl 2";
+		lvl3.innerHTML = "lvl 3";
 
 		iImg.draw()
 		lImg.draw()
@@ -558,5 +568,11 @@ window.addEventListener('keyup', (e)=>{
 		keys.a.pressed = false
 	}if(e.key === 'd'){
 		keys.d.pressed = false
+	}if(e.key === '8'){
+		age = '18'
+		txt = 'happy '+age+'th raish. sorry that ive made u disappointed :( i love u, i miss u'; 
+	}if(e.key === '7'){
+		age = '17'
+		txt = 'happy '+age+'th raish. sorry that ive made u disappointed :( i love u, i miss u'; 
 	}
 });
