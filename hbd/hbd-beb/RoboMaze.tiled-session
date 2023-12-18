@@ -1,0 +1,144 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "img/untitled.tmx",
+    "expandedProjectPaths": [
+    ],
+    "exportAsImage.useCurrentScale": true,
+    "fileStates": {
+        "Brown_Tile_Terrain (16 x 16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Coin (16 x 16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Flying_(32 x 32).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Gray_Tile_Terrain (16 x 16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "RoboMaze.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 3
+        },
+        "i.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 442,
+                "y": 105
+            }
+        },
+        "img/Brown_Tile_Terrain (16 x 16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "img/Coin (16 x 16).tsx": {
+            "scaleInDock": 5.5,
+            "scaleInEditor": 1
+        },
+        "img/Flying_(32 x 32).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "img/Gray_Tile_Terrain (16 x 16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "img/RoboMaze.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "img/Speech_Emotes (16 x 16).tsx": {
+            "scaleInDock": 5.5,
+            "scaleInEditor": 1
+        },
+        "img/i.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -339.3939393939395,
+                "y": 415.15151515151524
+            }
+        },
+        "img/l.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 483.5,
+                "y": 320
+            }
+        },
+        "img/untitled.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 459,
+                "y": 308
+            }
+        },
+        "img/y.tmx": {
+            "scale": 1.1942857142857142,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 557.6555023923445,
+                "y": 386.00478468899524
+            }
+        },
+        "img/y1.tmx": {
+            "scale": 1,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 382,
+                "y": 328
+            }
+        }
+    },
+    "last.exportedFilePath": "D:/ayessa js/robomaze/img/data",
+    "last.imagePath": "D:/Downloads/Mini FX, Items & UI/Mini FX, Items & UI/Mini UI",
+    "map.height": 40,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 70,
+    "openFiles": [
+        "img/i.tmx",
+        "img/Brown_Tile_Terrain (16 x 16).tsx",
+        "img/Coin (16 x 16).tsx",
+        "img/Flying_(32 x 32).tsx",
+        "img/Gray_Tile_Terrain (16 x 16).tsx",
+        "img/RoboMaze.tsx",
+        "img/Speech_Emotes (16 x 16).tsx",
+        "img/l.tmx",
+        "img/y1.tmx",
+        "img/untitled.tmx"
+    ],
+    "project": "RoboMaze.tiled-project",
+    "recentFiles": [
+        "img/i.tmx",
+        "img/Brown_Tile_Terrain (16 x 16).tsx",
+        "img/Coin (16 x 16).tsx",
+        "img/Flying_(32 x 32).tsx",
+        "img/Gray_Tile_Terrain (16 x 16).tsx",
+        "img/RoboMaze.tsx",
+        "img/Speech_Emotes (16 x 16).tsx",
+        "img/l.tmx",
+        "img/y1.tmx",
+        "img/untitled.tmx",
+        "img/y.tmx",
+        "Coin (16 x 16).tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
