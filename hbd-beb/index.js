@@ -578,9 +578,5 @@ window.addEventListener('keyup', (e)=>{
 		age = '18'
 		txtz1 = 'happy '+age+'th bebe. thank u for being the plot twist that u r in my life.'; 
 		txtz2 = 'i love u, i love everything about u. sorry that ive made u disappointed :( i miss u bebe'; 
-	}if(e.key === '7'){
-		age = '17'
-		txtz1 = 'happy '+age+'th bebe. thank u for being the plot twist that u r in my life. i love u, i love everything about u. sorry that ive made u disappointed :( i miss u bebe'; 
-		txtz2 = 'i love u, i love everything about u. sorry that ive made u disappointed :( i miss u bebe'; 
 	}
 });
