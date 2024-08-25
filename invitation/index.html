@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-image: url("bg.png");
+        margin: 0;
+        position: fixed;
+        
+      }
+
+      @font-face {
+      font-family: theseasons;
+      src: url(Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf);
+    }
+
+    @font-face {
+      font-family: westonia;
+      src: url(Westonia.otf);
+    }
+
+    .body_div{
+        top: -70vh;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(rgb(0, 0, 0, .6), rgba(0,0,0,.3), rgb(0, 0, 0, .7));
+        z-index: 0;
+    }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .div {
+        position: relative;
+        margin-top: 70vh;
+      }
+
+      .f1 {
+        position: relative;
+        animation-name: f1-animation;
+        animation-duration: 2s;
+        margin-top: -10vh;
+        margin-left: 60vw;
+        opacity: 24%;
+      }
+
+      .f2 {
+        position: relative;
+        animation-name: f2-animation;
+        animation-duration: 2s;
+        margin-top: -25vh;
+        margin-left: 30vw;
+        opacity: 20%;
+      } 
+ 
+      .f3 {
+        position: relative;
+        animation-name: f3-animation;
+        animation-duration: 2.3s;
+        margin-top: -40vh;
+        margin-left: vw;
+        opacity: 30%;
+      }
+
+      .f4 {
+        position: relative;
+        animation-name: f4-animation;
+        animation-duration: 2s;
+        margin-top: -100vh;
+        margin-left: -30vw;
+        opacity: 30%;
+      }
+
+      @keyframes f1-animation {
+        0% {
+          background-color: none;
+          left: 30vw;
+          top: 30vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @keyframes f2-animation {
+        0% {
+          background-color: none;
+          left: 15vw;
+          top: 50vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @keyframes f3-animation {
+        0% {
+          background-color: none;
+          left: -20vw;
+          top: 30vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @keyframes f4-animation {
+        0% {
+          background-color: none;
+          left: -30vw;
+          top: 30vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .border{
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+        animation: 3s ease 0s normal forwards 1 fadein;
+        height: 250px;
+      }
+
+      @keyframes fadein{
+        0% { opacity:0; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+    @-webkit-keyframes fadein{
+        0% { opacity:0; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+    .border_div{
+        width: fit-content;
+        margin: auto;
+        width: 50%;
+        margin-top: 40px;
+        
+    }
+
+    .j {
+      position: absolute;
+      font-family: theseasons;
+      font-size: 110px;
+      color: #e6d5b3;
+      z-index: 2;
+      margin-left: 80px;
+      margin-top: 50px;
+      -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+        animation: 4s ease 0s normal forwards 1 fadein;
+    }
+
+    .exclusive_div{
+      position: absolute;
+      z-index: 3;
+      font-family: westonia;
+      font-size: 50px;
+      letter-spacing: 6px;
+    }
+
+    .exclusive_div {
+      font-weight:300;
+      padding-top:40vh;
+      height:100vh;
+      overflow:hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-perspective: 1000;
+      -webkit-transform: translate3d(0,0,0);
+    }
+
+    .div1 {
+      display:inline-block;
+      overflow:hidden;
+      white-space:nowrap;
+      opacity: 0;
+      
+    }
+
+    .div1:first-of-type {    /* For increasing performance 
+                          ID/Class should've been used. 
+                          For a small demo 
+                          it's okaish for now */
+      animation: showup 5s ;
+      animation-fill-mode: forwards;
+      animation-delay: 2.5s;
+    }
+
+    .div1:last-of-type {
+      width:0px;
+      animation: reveal 7s ;
+      animation-fill-mode: forwards;
+      animation-delay: 1.5s;
+
+    }
+
+    .div1:last-of-type span {
+      margin-left:-75px;
+      animation: slidein 7s ;
+      animation-fill-mode: forwards;
+      animation-delay: 1.5s;
+
+    }
+
+    @keyframes showup {
+        0% {opacity:0;}
+        15% {opacity:1;}
+        80% {opacity:1;}
+        100% {opacity:1;}
+    }
+
+    @keyframes slidein {
+        0% { margin-left:-700px; }
+        20% { margin-left:-700px; }
+        35% { margin-left:0px; }
+        100% { margin-left:0px; }
+    }
+
+    @keyframes reveal {
+        0% {opacity:0;width:0px;}
+        20% {opacity:1;width:0px;}
+        30% {width:75px;}
+        80% {opacity:1;}
+        100% {opacity:1;width:75px;}
+    }
+    .exclusive_div{
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      color: #e6d5b3;
+    }
+
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+  </body>
+        <div class="border_div">
+            <h1 class="j">J</h1>
+            <img src="b2.png" class="border">
+        </div>
+
+        <div class="exclusive_div">
+          <div class="div1">Exclusive</div> 
+            <div class="div1"> 
+              <span>18th</span>
+            </div>
+        </div>
+
+        
+        
+    
+        <div class="div">
+        <img src="f1.png" class="f1" />
+        <img src="f4.png" class="f4" />
+        <img src="f2.png" class="f2" />
+        <img src="f3.png" class="f3" />
+        <div class="body_div"></div>
+        </div>   
+    </div>
+    
+  </body>
+</html>
