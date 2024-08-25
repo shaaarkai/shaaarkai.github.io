@@ -17,8 +17,8 @@
     }
 
     @font-face {
-      font-family: westonia;
-      src: url(Westonia.otf);
+      font-family: lejour;
+      src: url(Slight-Font/Slight/Slight/Slight-Regular.ttf);
     }
 
     .body_div{
@@ -171,13 +171,14 @@
     .exclusive_div{
       position: absolute;
       z-index: 3;
-      font-family: westonia;
-      font-size: 50px;
-      letter-spacing: 6px;
+      font-family: lejour;
+      letter-spacing: 2px;
+      font-weight: 900;
     }
 
     .exclusive_div {
       font-weight:300;
+      height: 200px;
       padding-top:40vh;
       height:100vh;
       overflow:hidden;
@@ -187,10 +188,14 @@
     }
 
     .div1 {
+      font-size: 28px;
       display:inline-block;
       overflow:hidden;
       white-space:nowrap;
       opacity: 0;
+      height: 200px;
+      padding-top: 10px;
+      padding-right: 25px;
       
     }
 
@@ -212,6 +217,7 @@
     }
 
     .div1:last-of-type span {
+      padding-right: 20px;
       margin-left:-75px;
       animation: slidein 7s ;
       animation-fill-mode: forwards;
@@ -222,7 +228,6 @@
     @keyframes showup {
         0% {opacity:0;}
         15% {opacity:1;}
-        80% {opacity:1;}
         100% {opacity:1;}
     }
 
@@ -247,6 +252,20 @@
       color: #e6d5b3;
     }
 
+    .p1{
+      position: absolute;
+      text-align: center;
+    }
+
+    .p {
+      padding: 10px;
+      position: absolute;
+      width: 80%;
+      margin: auto;
+      color: #f1ebdf;
+      z-index: 4;
+    }
+
     </style>
     <title>Document</title>
   </head>
@@ -263,6 +282,15 @@
               <span>18th</span>
             </div>
         </div>
+
+        <div class="p">
+          <p class="p1">
+          </p>
+        </div>
+
+        
+
+        
 
         
         
