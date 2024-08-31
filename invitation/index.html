@@ -293,10 +293,25 @@
       font-weight: 700;
       padding: 7px 13px;
       font-size: 13px;
-      margin-left: 30vw;
+      margin-left: 32vw;
       -webkit-animation: 9s ease 0s normal forwards 1 fadein;
         animation: 9s ease 0s normal forwards 1 fadein;
     }
+
+    .div_inv{
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: inline-block;
+    }
+
+    .fade-out {
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 0;
+}
 
 
 
@@ -304,9 +319,13 @@
     <title>Document</title>
   </head>
   <body>
-  </body>
+
+    
+
+    <div class="div_inv" id="div_inv">
+
         <div class="border_div">
-            <h1 class="j">J</h1>
+            <h1 class="j" id="j">J</h1>
             <img src="b2.png" class="border">
         </div>
 
@@ -327,7 +346,9 @@
           </p>
         </div>
 
-        <div class="button_open">Open Invitation</div>
+        <div class="button_open" onclick="hide(this.parentNode)">Open Invitation</div>
+
+      </div>
         
     
         <div class="div">
@@ -337,7 +358,23 @@
         <img src="f3.png" class="f3" />
         <div class="body_div"></div>
         </div>   
-    </div>
+
+        <script>
+          function hide(elem) {
+            var opacity = Number(window.getComputedStyle(elem).getPropertyValue("opacity"));
+            var opacityChange = setInterval(change, 20);
+
+            function change() {
+              if (opacity > 0) {
+                  opacity -= 0.05;
+                  elem.style.opacity = opacity;
+              } else {
+                clearInterval(opacityChange);
+              }
+            }
+          }
+        </script>
+
     
   </body>
 </html>
