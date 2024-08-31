@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-image: url("bg.png");
+        margin: 0;
+        position: fixed;
+        background-color: #1a080b;
+        
+      }
+
+      @font-face {
+      font-family: theseasons;
+      src: url(Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf);
+    }
+
+    @font-face {
+      font-family: lejour;
+      src: url(Slight-Font/Slight/Slight/Slight-Regular.ttf);
+    }
+
+    .body_div{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(rgb(0, 0, 0, .6), rgba(0,0,0,.2), rgb(0, 0, 0, .7));
+        z-index: 1;
+    }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .div {
+        position: relative;
+        margin-top: 70vh;
+      }
+
+      .f1 {
+        position: relative;
+        animation-name: f1-animation;
+        animation-duration: 2s;
+        margin-top: -10vh;
+        margin-left: 60vw;
+        opacity: 24%;
+      }
+
+      .f2 {
+        position: relative;
+        animation-name: f2-animation;
+        animation-duration: 2s;
+        margin-top: -25vh;
+        margin-left: 30vw;
+        opacity: 20%;
+      } 
+ 
+      .f3 {
+        position: relative;
+        animation-name: f3-animation;
+        animation-duration: 2.3s;
+        margin-top: -40vh;
+        margin-left: vw;
+        opacity: 30%;
+      }
+
+      .f4 {
+        position: relative;
+        animation-name: f4-animation;
+        animation-duration: 2s;
+        margin-top: -100vh;
+        margin-left: -30vw;
+        opacity: 30%;
+      }
+
+      @keyframes f1-animation {
+        0% {
+          background-color: none;
+          left: 30vw;
+          top: 30vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @keyframes f2-animation {
+        0% {
+          background-color: none;
+          left: 15vw;
+          top: 50vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @keyframes f3-animation {
+        0% {
+          background-color: none;
+          left: -20vw;
+          top: 30vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      @keyframes f4-animation {
+        0% {
+          background-color: none;
+          left: -30vw;
+          top: 30vh;
+        }
+        100% {
+          background-color: none;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+
+      @keyframes fadein{
+        0% { opacity:0; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+    @-webkit-keyframes fadein{
+        0% { opacity:0; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+    .border_div{
+        width: fit-content;
+        margin: auto;
+        width: 50%;
+        margin-top: 40px;
+        
+    }
+
+
+    .div1 {
+      font-size: 30px;
+      display:inline-block;
+      overflow:hidden;
+      white-space:nowrap;
+      opacity: 0;
+      height: 200px;
+      padding-top: 10px;
+      padding-right: 25px;
+      margin: 0;
+      
+    }
+
+    .div1:first-of-type {    /* For increasing performance 
+                          ID/Class should've been used. 
+                          For a small demo 
+                          it's okaish for now */
+      animation: showup 5s ;
+      animation-fill-mode: forwards;
+      animation-delay: 2.5s;
+    }
+
+    .div1:last-of-type {
+      width:0px;
+      animation: reveal 7s ;
+      animation-fill-mode: forwards;
+      animation-delay: 1.5s;
+
+    }
+
+    .div1:last-of-type span {
+      padding-right: 20px;
+      margin-left:-75px;
+      animation: slidein 7s ;
+      animation-fill-mode: forwards;
+      animation-delay: 1.5s;
+
+    }
+
+    @keyframes showup {
+        0% {opacity:0;}
+        15% {opacity:1;}
+        100% {opacity:1;}
+    }
+
+    @keyframes slidein {
+        0% { margin-left:-700px; }
+        20% { margin-left:-700px; }
+        35% { margin-left:0px; }
+        100% { margin-left:0px; }
+    }
+
+    @keyframes reveal {
+        0% {opacity:0;width:0px;}
+        20% {opacity:1;width:0px;}
+        30% {width:75px;}
+        80% {opacity:1;}
+        100% {opacity:1;width:75px;}
+    }
+    .exclusive_div{
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      color: #e6d5b3;
+    }
+
+    .p1{
+      text-align: center;
+      margin-top: 5vh;
+      -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+        animation: 2s ease 0s normal forwards 1 fadein;
+        font-weight: 200;
+    }
+
+    .p_div {
+      font-size: 30px;
+      position: absolute;
+      width: 80%;
+      padding: 40px;
+      margin: auto;
+      color: #e6d5b3;
+      z-index: 10;
+      font-family: "lejour";
+    }
+
+    .p2{
+        margin-top: -15px;
+        font-weight: 100;
+      font-family: 'theseasons';
+      font-size: 11px;
+      letter-spacing: .5px;
+      text-align: center;
+      -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+        animation: 3s ease 0s normal forwards 1 fadein;
+
+        font-family: "libre-baskerville"
+    }
+
+    .button_openp{
+      position: absolute;
+      margin-top: 80vh;
+      z-index: 10;
+      border: 1px solid #e6d5b3;
+      border-radius: 10px;
+      color: #f1ebdf;
+      font-family: "Cinzel";
+      font-weight: 700;
+      padding: 7px 13px;
+      font-size: 12px;
+      margin-left: 20vw;
+      -webkit-animation: 9s ease 0s normal forwards 1 fadein;
+        animation: 9s ease 0s normal forwards 1 fadein;
+    }
+    .button_openn{
+      position: absolute;
+      margin-top: 80vh;
+      z-index: 10;
+      border: 1px solid #e6d5b3;
+      border-radius: 10px;
+      color: #f1ebdf;
+      font-family: "Cinzel";
+      font-weight: 700;
+      padding: 7px 13px;
+      font-size: 12px;
+      margin-left: 65vw;
+      -webkit-animation: 9s ease 0s normal forwards 1 fadein;
+        animation: 9s ease 0s normal forwards 1 fadein;
+    }
+
+    .div_inv{
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: inline-block;
+    }
+
+    .name_div{
+        position: absolute;
+        color: #f1ebdf;
+        z-index: 10;
+        letter-spacing: 2px;
+        font-style: italic;
+        font-size: 18px;
+        width: 80%;
+      padding: 40px;
+      margin: auto;
+      text-align: center;
+      margin-top: 20vh;
+    }
+
+    .name_div > p{
+        margin: 10px;
+    }
+
+    .n1{
+        -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+        animation: 4s ease 0s normal forwards 1 fadein;
+    }
+    .n2{
+        -webkit-animation: 4.5s ease 0s normal forwards 1 fadein;
+        animation: 4.5s ease 0s normal forwards 1 fadein;
+    }
+    .n3{
+        -webkit-animation: 5s ease 0s normal forwards 1 fadein;
+        animation: 5s ease 0s normal forwards 1 fadein;
+    }
+    .n4{
+        -webkit-animation: 5.5s ease 0s normal forwards 1 fadein;
+        animation: 5.5s ease 0s normal forwards 1 fadein;
+    }
+    .n5{
+        -webkit-animation: 6s ease 0s normal forwards 1 fadein;
+        animation: 6s ease 0s normal forwards 1 fadein;
+    }
+    .n6{
+        -webkit-animation: 6.5s ease 0s normal forwards 1 fadein;
+        animation: 6.5s ease 0s normal forwards 1 fadein;
+    }
+    .n7{
+        -webkit-animation: 7s ease 0s normal forwards 1 fadein;
+        animation: 7s ease 0s normal forwards 1 fadein;
+    }
+    .n8{
+        -webkit-animation: 7.5s ease 0s normal forwards 1 fadein;
+        animation: 7.5s ease 0s normal forwards 1 fadein;
+    }
+    .n9{
+        -webkit-animation: 8s ease 0s normal forwards 1 fadein;
+        animation: 8s ease 0s normal forwards 1 fadein;
+    }
+    .n10{
+        -webkit-animation: 8.5s ease 0s normal forwards 1 fadein;
+        animation: 8.5s ease 0s normal forwards 1 fadein;
+    }
+
+
+
+
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body_div"></div>
+
+        <div class="p_div">
+          <p class="p1">
+            Luck Bearer
+          </p>
+          <p class="p2">
+            someone who offers monetary gifts to the <i>debutante</i> for
+            prosperity and financial success 
+          </p>
+        </div>
+
+        <div class="name_div">
+            <p class="n1">
+                Shiela Camus
+              </p>
+              <p class="n2">
+                John Ezekiel Camus
+              </p>
+              <p class="n3">
+                Roselia Gan
+              </p>
+              <p class="n4">
+                Anne Pascual
+              </p>
+              <p class="n5">
+                Aries Linoy
+            </p>
+              <p class="n6">
+                Grace Antoinette Vitug
+            </p>
+              <p class="n7">
+                Ria Calautit
+            </p>
+              <p class="n8">
+                Roxanne Ycasiano
+            </p>
+              <p class="n9">
+                EJ Francisco
+            </p>
+              <p class="n10">
+                Hon. Eliseo Santos
+              </p>
+
+        </div>
+
+        <div class="button_openp" onclick="hide(this.parentNode)">previous</div>
+        <div class="button_openn" onclick="hide(this.parentNode)">next</div>
+
+      
+      
+        
+    
+        <div class="div">
+        <img src="f1.png" class="f1" />
+        <img src="f4.png" class="f4" />
+        <img src="f2.png" class="f2" />
+        <img src="f3.png" class="f3" />
+        
+        </div>   
+
+      </div>
+      
+
+        <script>
+          function hide(elem) {
+            var opacity = Number(window.getComputedStyle(elem).getPropertyValue("opacity"));
+            var opacityChange = setInterval(change, 20);
+
+            function change() {
+              if (opacity > 0) {
+                  opacity -= 0.02;
+                  elem.style.opacity = opacity;
+              } else {
+                clearInterval(opacityChange);
+                window.location.href = "1.html";
+              }
+            }
+          }
+        </script>
+
+    
+  </body>
+</html>
