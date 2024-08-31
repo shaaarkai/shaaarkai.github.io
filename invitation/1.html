@@ -399,8 +399,8 @@
 
         </div>
 
-        <div class="button_openp" onclick="hide(this.parentNode)">previous</div>
-        <div class="button_openn" onclick="hide(this.parentNode)">next</div>
+        <div class="button_openp" onclick="hidep(this.parentNode)">previous</div>
+        <div class="button_openn" onclick="hiden(this.parentNode)">next</div>
 
       
       
@@ -418,7 +418,7 @@
       
 
         <script>
-          function hide(elem) {
+          function hidep(elem) {
             var opacity = Number(window.getComputedStyle(elem).getPropertyValue("opacity"));
             var opacityChange = setInterval(change, 20);
 
@@ -428,7 +428,22 @@
                   elem.style.opacity = opacity;
               } else {
                 clearInterval(opacityChange);
-                window.location.href = "1.html";
+                window.location.href = "index.html";
+              }
+            }
+          }
+
+          function hiden(elem) {
+            var opacity = Number(window.getComputedStyle(elem).getPropertyValue("opacity"));
+            var opacityChange = setInterval(change, 20);
+
+            function change() {
+              if (opacity > 0) {
+                  opacity -= 0.02;
+                  elem.style.opacity = opacity;
+              } else {
+                clearInterval(opacityChange);
+                window.location.href = "2.html";
               }
             }
           }
