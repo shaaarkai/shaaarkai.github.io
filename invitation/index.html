@@ -26,12 +26,11 @@
     }
 
     .body_div{
-        top: -70vh;
         height: 100vh;
         width: 100%;
         position: absolute;
         background-image: linear-gradient(rgb(0, 0, 0, .6), rgba(0,0,0,.2), rgb(0, 0, 0, .7));
-        z-index: 0;
+        z-index: 1;
     }
       html,
       body {
@@ -165,7 +164,7 @@
       font-family: theseasons;
       font-size: 110px;
       color: #e6d5b3;
-      z-index: 2;
+      z-index: 10;
       margin-left: 80px;
       margin-top: 43px;
       -webkit-animation: 4s ease 0s normal forwards 1 fadein;
@@ -174,7 +173,7 @@
 
     .exclusive_div{
       position: absolute;
-      z-index: 3;
+      z-index: 10;
       font-family: lejour;
       letter-spacing: 2px;
       font-weight: 500;
@@ -268,7 +267,7 @@
       padding: 40px;
       margin: auto;
       color: #f1ebdf;
-      z-index: 4;
+      z-index: 10;
       font-family: "Cinzel";
     }
 
@@ -305,22 +304,13 @@
       display: inline-block;
     }
 
-    .fade-out {
-    -webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -ms-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
-     opacity: 0;
-}
-
 
 
     </style>
     <title>Document</title>
   </head>
   <body>
-
-    
+    <div class="body_div"></div>
 
     <div class="div_inv" id="div_inv">
 
@@ -348,7 +338,8 @@
 
         <div class="button_open" onclick="hide(this.parentNode)">Open Invitation</div>
 
-      </div>
+      
+      
         
     
         <div class="div">
@@ -356,8 +347,11 @@
         <img src="f4.png" class="f4" />
         <img src="f2.png" class="f2" />
         <img src="f3.png" class="f3" />
-        <div class="body_div"></div>
+        
         </div>   
+
+      </div>
+      
 
         <script>
           function hide(elem) {
@@ -366,10 +360,11 @@
 
             function change() {
               if (opacity > 0) {
-                  opacity -= 0.05;
+                  opacity -= 0.02;
                   elem.style.opacity = opacity;
               } else {
                 clearInterval(opacityChange);
+                window.location.href = "1.html";
               }
             }
           }
