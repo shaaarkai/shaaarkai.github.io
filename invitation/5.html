@@ -27,6 +27,7 @@
       font-family: lejour;
       src: url(Slight-Font/Slight/Slight/Slight-Regular.ttf);
     }
+    
 
     .body_div{
         height: 100vh;
@@ -225,8 +226,17 @@
         font-weight: 200;
     }
 
+    .p3{
+      margin-top: 35vh;
+        padding-top: 10px;
+      text-align: center;
+      -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+        animation: 2s ease 0s normal forwards 1 fadein;
+        font-weight: 200;
+    }
+
     .p_div {
-      font-size: 26px;
+      font-size: 30px;
       position: absolute;
       width: 80%;
       padding: 40px;
@@ -237,7 +247,7 @@
     }
 
     .p2{
-        margin-top: -15px;
+        margin-top: 10px;
         font-weight: 100;
       font-family: 'theseasons';
       font-size: 11px;
@@ -251,7 +261,7 @@
 
     .button_openp{
       position: absolute;
-      margin-top: 83vh;
+      margin-top: 80vh;
       z-index: 10;
       border: 1px solid #e6d5b3;
       border-radius: 10px;
@@ -266,7 +276,7 @@
     }
     .button_openn{
       position: absolute;
-      margin-top: 83vh;
+      margin-top: 80vh;
       z-index: 10;
       border: 1px solid #e6d5b3;
       border-radius: 10px;
@@ -288,18 +298,31 @@
     }
 
     .name_div{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Cinzel';
         position: absolute;
         color: #f1ebdf;
         z-index: 10;
         letter-spacing: 2px;
-        font-style: italic;
-        font-size: 18px;
+        font-size: 10px;
         width: 80%;
       padding: 40px;
       margin: auto;
       text-align: center;
-      margin-top: 15vh;
+      margin-top: 22vh;
+    }
+
+    .name_div1{
+        font-family: 'Cinzel';
+        position: absolute;
+        color: #f1ebdf;
+        z-index: 10;
+        letter-spacing: 2px;
+        font-size: 9px;
+        width: 85%;
+      padding: 30px;
+      margin: auto;
+      text-align: center;
+      margin-top: 60vh;
     }
 
     .name_div > p{
@@ -355,6 +378,14 @@
         animation: 9.5s ease 0s normal forwards 1 fadein;
     }
 
+    .divloc{
+        border: solid 3px #6b4c27;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.1);
+        -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+        animation: 3s ease 0s normal forwards 1 fadein;
+    }
+
 
 
 
@@ -364,57 +395,43 @@
   <body>
     <div class="body_div"></div>
 
-    <div class="div_inv" id="div_inv">
+    <div class="div_inv">
 
         <div class="p_div">
           <p class="p1">
-            Luck Bearer
+            Location
           </p>
-          <p class="p2">
-            someone who offers monetary gifts to the <i>debutante</i> for
-            prosperity and financial success 
-          </p>
+          <div class="divloc">
+            <p class="p2">
+                SAN FRANCISCO SQUARE, 748 ESTRELLA ST. MALOLOS, BULACAN
+            </p>
+          </div>
+          
         </div>
+        
 
         <div class="name_div">
             <p class="n1">
-              Tin Galura
-              </p>
-              <p class="n2">
-                Ronellie Dela Cruz
-
-              </p>
-              <p class="n3">
-                Ria Libao
-              </p>
-              <p class="n4">
-                Roxanne Ycasiano
-              </p>
-              <p class="n5">
-                Lei Natividad
-              </p>
-              <p class="n6">
-                Raymark Caluag
-              </p>
-              <p class="n7">
-                Aries Linoy
-              </p>
-              <p class="n8">
-                Praise De Guzman
-              </p>
-              <p class="n9">
-                Roselia Gan
-              </p>
-              <p class="n10">
-                Grace Antoinette Vitug
-              </p>
-              <p class="n11">
-                EJ Francisco
-              </p>
-              <p class="n12">
-                Hon. Eliseo Santos              </p>
+                REFER TO <b>WAZE</b> OR <b>GOOGLE MAPS</b> FOR DIRECTIONS TO THE VENUE
+            </p>
 
         </div>
+
+        <div class="p_div">
+            <p class="p3">
+                Attire Guide
+            </p>
+            </div>
+
+            <div class="name_div1">
+                <p class="n1">
+                    DRESS ENTIRELY IN <b>BLACK</b> FROM TOP TO BOTTOM.<br><br>
+                    WEARING CLOTHES WITH DIFFERENT COLORS IS  <b>NOT  ALLOWED</b>.
+                </p>
+    
+            </div>
+            
+          </div>
 
         <div class="button_openp" onclick="hidep(this.parentNode)">previous</div>
         <div class="button_openn" onclick="hiden(this.parentNode)">next</div>
@@ -431,7 +448,7 @@
         
         </div>   
 
-    </div>
+      </div>
       
 
         <script>
@@ -445,7 +462,7 @@
                   elem.style.opacity = opacity;
               } else {
                 clearInterval(opacityChange);
-                window.location.href = "index.html";
+                window.location.href = "3.html";
               }
             }
           }
@@ -460,7 +477,7 @@
                   elem.style.opacity = opacity;
               } else {
                 clearInterval(opacityChange);
-                window.location.href = "2.html";
+                window.location.href = "5.html";
               }
             }
           }
